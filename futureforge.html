@@ -1,459 +1,514 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>FutureForge</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
     <!-- Place favicon.ico in the root directory -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/gijgo.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/slicknav.css" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <style>
-        
-        
-        
+        .accordion .card-header {
+            cursor: pointer;
+        }
+        .accordion .btn {
+            text-align: left;
+            width: 100%;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+        }
+        .accordion .btn:focus {
+            box-shadow: none;
+        }
+        .accordion .btn i {
+            float: right;  /* Position arrow to the right */
+            transition: transform 0.3s ease;
+        }
+        .accordion .btn[aria-expanded="true"] i {
+            transform: rotate(180deg); /* Flip arrow when expanded */
+        }
     </style>
-</head>
 
-<body>
-    
+  </head>
+
+  <body>
     <!-- header-start -->
     <header>
       <div class="header-area">
-          <div id="sticky-header" class="main-header-area">
-              <div class="container">
-                  <div class="header_bottom_border">
-                      <div class="row align-items-center">
-                          <div class="col-12">
-                              <div class="college-banner d-flex align-items-center justify-content-center text-center">
-                                  <img src="img/logo.png" alt="College Logo" class="college-logo" style="margin-right: 50px;">
-                                  <div class="college-name">
-                                      <h5 align="center">PIMPRI CHINCHWAD EDUCATION TRUST's</h5>
-                                      <h3>PIMPRI CHINCHWAD COLLEGE OF ENGINEERING</h3>
-                                      <h3 align="center">Department of MCA</h3>
-                                  </div>
-                                  
-                                  <img src="img/mcasa.png" alt="College Logo" class="college-logo" style="margin-left: 50px;">
-                              </div>
-                          </div>
-                          <div class="col-xl-6 col-lg-6">
-                              <div class="main-menu d-none d-lg-block ">
-                                  <nav>
-                                      <ul id="navigation">
-                                          <li><a href="index.html">Home</a></li>
-                                          <li><a href="#">Events <i class="ti-angle-down"></i></a>
-                                              <ul class="submenu">
-                                                  <li><a href="futureforge.html">Future Forge</a></li>
-                                                  <li><a href="tech_tank.html">Tech Tank</a></li>
-                                                  <li><a href="humanludo.html">Human Ludo</a></li>
-                                                  <li><a href="roadies.html">Roadies</a></li>
-                                              </ul>
-                                          </li>
-                                          <li><a href="contact.html">Contact</a></li>
-                                      </ul>
-                                  </nav>
-                              </div>
-                          </div>
-
-                          <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                              <div class="buy_tkt">
-                                  <div class="book_btn d-none d-lg-block">
-                                      <a href="#">Register Now</a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-12">
-                              <div class="mobile_menu d-block d-lg-none"></div>
-                          </div>
-                      </div>
+        <div id="sticky-header" class="main-header-area">
+          <div class="container">
+            <div class="header_bottom_border">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div
+                    class="college-banner d-flex align-items-center justify-content-center text-center"
+                  >
+                    <div class="color-stripe left-stripe"></div>
+                    <img
+                      src="img/logo.png"
+                      alt="College Logo"
+                      class="college-logo"
+                      style="margin-right: 30px"
+                    />
+                    <div class="college-name">
+                      <h5>PIMPRI CHINCHWAD EDUCATION TRUST's</h5>
+                      <h3>PIMPRI CHINCHWAD COLLEGE OF ENGINEERING</h3>
+                      <h3>DEPARTMENT OF MCA</h3>
+                    </div>
+                    <img
+                      src="img/mcasa.png"
+                      alt="College Logo"
+                      class="college-logo"
+                      style="margin-left: 30px"
+                    />
+                    <div class="color-stripe right-stripe"></div>
                   </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                  <div class="main-menu d-none d-lg-block">
+                    <nav>
+                      <ul id="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                          <a href="#">Events <i class="ti-angle-down"></i></a>
+                          <ul class="submenu">
+                            <li><a href="futureforge.html">Future Forge</a></li>
+                            <li><a href="tech_tank.html">Tech Tank</a></li>
+                            <li><a href="humanludo.html">Human Ludo</a></li>
+                            <li><a href="roadies.html">Roadies</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                  <div class="buy_tkt">
+                    <div class="book_btn d-none d-lg-block">
+                      <a href="#">Register Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
               </div>
+            </div>
           </div>
+        </div>
       </div>
-  </header>
-  
-  <style>
-      .college-banner {
-          background: #f8f9fa;
-          padding: 15px;
-          border-bottom: 2px solid #ddd;
-          flex-direction: column;
-          text-align: center;
-      }
-      .college-logo {
-          width: 80px;
-          margin-bottom: 10px;
-          margin-left: 0;
-          margin-right: 0;
-      }
-      .college-name h5, .college-name h3, .college-name p {
-          margin: 0;
-          padding: 2px 0;
-      }
-      .college-name h3 {
-          font-size: 1.5rem;
-      }
-      .college-name p {
-          font-size: 0.9rem;
-          color: #555;
-      }
-      .img-size img{
-          height: 450px;
-          width:auto;
-      }
-      @media (min-width: 768px) {
-          .college-banner {
-              flex-direction: row;
-              justify-content: center;
-          }
-          .college-logo {
-              width: 100px;
-              margin-right: 15px;
-              margin-bottom: 0;
-          }
-          .college-name {
-              text-align: left;
-          }
-      }
-      .small-logo {
-          width: 150px; /* Adjust the size as needed */
-          height: auto; /* Maintain aspect ratio */
-      }
-      @media (max-width: 768px) {
-          .slider_area {
-              margin-top: 300px; /* Adjust based on the header height */
-          }
-      }
-      @media (max-width: 768px) {
-          #sticky-header {
-              position: sticky;
-              top: 0;
-              z-index: 1000;
-              background: white;
-              box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-          }
-      
-          .college-banner {
-              position: relative; /* Ensures it does not stick */
-          }
-      }
-      @media (max-width: 768px) {
-          
-          .mobile_menu .slicknav_btn {
-              color: black !important; /* Change the hamburger icon color */
-          }
-          .mobile_menu .slicknav_icon-bar {
-              background: black !important; /* Change the menu lines to black */
-          }
-      }
-      @media (max-width: 768px) {
-          .college-logo {
-              margin-right: 0 !important;
-              margin-left: 0 !important;          
-          }
-      }
-      
-      
-  </style>
-    
+    </header>
+
     <!-- header-end -->
 
- 
-     <!-- bradcam_area -->
-     <div class="bradcam_area">
-      <div class="single_bradcam  d-flex align-items-center bradcam_bg_1 overlay">
-            <div class="container">
-                  <div class="row align-items-center justify-content-center">
-                     <div class="col-xl-12">
-                        <div class="bradcam_text text-center">
-                          <!-- <div class="shape_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+    <!-- bradcam_area -->
+    <div class="bradcam_area">
+      <div
+        class="single_bradcam d-flex align-items-center bradcam_bg_1 overlay"
+      >
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-xl-12">
+              <div class="bradcam_text text-center">
+                <!-- <div class="shape_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                               <img src="img/shape/shape_1.svg" alt="">
                           </div>
                           <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
                               <img src="img/shape/shape_2.svg" alt="">
                           </div> -->
-                              <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">FutureForge</h3>
-                        </div>
-                     </div>
-                  </div>
+                <h3
+                  class="wow fadeInRight"
+                  data-wow-duration="1s"
+                  data-wow-delay=".3s"
+                >
+                  FutureForge
+                </h3>
+              </div>
             </div>
-         </div>
-   </div>
-  <!-- bradcam_area end -->
-
-   <!--================Blog Area =================-->
-   <section class="blog_area single-post-area section-padding">
-      <div class="container">
-         <div class="row">
-            <div class="col posts-list">
-               <div class="single-post">
-                  <div class="feature-img">
-                     <img class="img-fluid" src="img/performer/1.jpg" alt="">
-                  </div>
-                  <div class="blog_details">
-                     <h2>FutureForge</h2>
-                     <p class="excert">
-                        FutureForge is an innovation-focused event aimed at showcasing computer application solutions that address critical challenges in the Defence Tech and Sports and Fitness domains. Teams will develop and present fully functional software solutions — web apps, mobile apps, or desktop software — designed to enhance national security, improve physical health, or boost sports performance. This event encourages creative problem-solving, technical expertise, and impactful software development, offering participants a chance to gain recognition, mentorship, and opportunities for future collaboration.
-                     </p>
-                     <div class="quote-wrapper">
-                        <div class="quotes">
-                            <h3>General Rules</h3>
-                            <ul>
-                                <li>
-                                    <b>Eligibility: </b>Open to <b class="text-dark">postgraduate students</b> specializing in <b class="text-dark">computer applications</b> or
-                                    related fields.
-                                </li>
-                                <li>
-                                    <b>TeamComposition:</b> Teams must consist of <b class="text-dark">2 members</b> (no individual participation).
-                                </li>
-                                <li>
-                                    <b>Domains of Innovation:</b>
-                                    <ol>
-                                        <li><b class="text-dark">Defence Tech:</b> Focus on innovations for national security, including surveillance,
-                                            threat detection, secure communication, and military technology solutions.
-                                        </li>
-                                        <li>
-                                            <b class="text-dark">Sports and Fitness:</b>
-                                        </li>
-                                            
-                                        <li>
-                                            <b class="text-dark">Fitness:</b> Solutions that improve physical and mental health, track progress,
-                                             and motivate users, possibly leveraging gamification or AI-driven insights.
-                                        </li>
-                                        <li>
-                                            <b class="text-dark">Sports</b>: Innovations related to athlete performance, coaching, fan
-                                            engagement, or sports equipment.
-                                        </li>    
-                                    </ol>
-                                </li>
-                            </ul>
-                        </div>
-                     </div>
-                     <div class="quote-wrapper">
-                        <div class="quotes">
-                            <h3>Submission Rules</h3>
-                            <ol>
-                                <li> <b class="text-dark">1. Abstract Submission:</b>  A1-pageabstract clearly defining the problem statement, proposed solution, and
-                                    expected outcomes is mandatory.
-                                </li>
-                                <li>
-                                 <b class="text-dark">2.  Final Report:</b> Adetailed report (up to 10 pages) explaining the methodology, technologies used,
-                                    implementation details, and feasibility
-                                </li>
-                                <li>
-                                 <b class="text-dark"> 3. Prototype Submission:</b>
-                                        Teamsmust provide a functional prototype during the presentation
-                                </li>
-                            </ol>
-                        </div>                        
-                     </div>
-                     <div class="quote-wrapper">
-                        <div class="quotes">
-                            <h3>Presentation Rules</h3>
-                            <ol>
-                              <li>
-                                 <b class="text-dark">1. Time Allocation: </b>
-                                 Eachteam gets 10 minutes for presentation, followed by 5 minutes for Q&A
-                              </li>
-                              <li>
-                                 <b class="text-dark">2. Medium:</b>
-                              Presentations includes live demonstrations of the software.
-                              </li>
-                            </ol>
-                        </div>
-                     </div>
-                     <div class="quote-wrapper">
-                        <div class="quotes">
-                            <h3>Code of Conduct</h3>
-                            <ol>
-                              <li>
-                                 1. All participants are expected to maintain professional decorum during the event.
-                                 
-                              </li>
-                              <li>
-                                 2. Failure to adhere to submission deadlines will result in disqualification.
-                              </li>
-                            </ol>
-                        </div>
-                     </div>
-                     <div class="container">
-                        <h3>For any query feel free to reach</h3>
-                        <p>Phone: 9693054074</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>           
-   </section>
-   <!--================ Blog Area end =================-->
-     <!-- FAQ Area Strart -->
-      <div class="container">
-         <h3>Frequently Asked Questions</h3>
-     <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
         </div>
       </div>
     </div>
-   </div>
+    <!-- bradcam_area end -->
+
+    <!--================Blog Area =================-->
+    <section class="blog_area single-post-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col posts-list">
+            <div class="single-post">
+              <div class="feature-img">
+                <img class="img-fluid" src="img/performer/1.jpg" alt="" />
+              </div>
+              <div class="blog_details">
+                <h2>FutureForge</h2>
+                <p class="excert">
+                  FutureForge is an innovation-focused event aimed at showcasing
+                  computer application solutions that address critical
+                  challenges in the Defence Tech and Sports and Fitness domains.
+                  Teams will develop and present fully functional software
+                  solutions — web apps, mobile apps, or desktop software —
+                  designed to enhance national security, improve physical
+                  health, or boost sports performance. This event encourages
+                  creative problem-solving, technical expertise, and impactful
+                  software development, offering participants a chance to gain
+                  recognition, mentorship, and opportunities for
+                  future collaboration.
+                </p>
+                <div class="quote-wrapper">
+                  <div class="quotes">
+                    <h3>General Rules</h3>
+                    <ul>
+                      <li>
+                        <b>Eligibility: </b>Open to
+                        <b class="text-dark">postgraduate students</b>
+                        specializing in
+                        <b class="text-dark">computer applications</b> or
+                        related fields.
+                      </li>
+                      <li>
+                        <b>TeamComposition:</b> Teams must consist of
+                        <b class="text-dark">2 members</b> (no individual
+                        participation).
+                      </li>
+                      <li>
+                        <b>Domains of Innovation:</b>
+                        <ol>
+                          <li>
+                            <b class="text-dark">Defence Tech:</b> Focus on
+                            innovations for national security, including
+                            surveillance, threat detection, secure
+                            communication, and military technology solutions.
+                          </li>
+                          <li>
+                            <b class="text-dark">Sports and Fitness:</b>
+                          </li>
+
+                          <li>
+                            <b class="text-dark">Fitness:</b> Solutions that
+                            improve physical and mental health, track progress,
+                            and motivate users, possibly leveraging gamification
+                            or AI-driven insights.
+                          </li>
+                          <li>
+                            <b class="text-dark">Sports</b>: Innovations related
+                            to athlete performance, coaching, fan engagement, or
+                            sports equipment.
+                          </li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="quote-wrapper">
+                  <div class="quotes">
+                    <h3>Submission Rules</h3>
+                    <ol>
+                      <li>
+                        <b class="text-dark">1. Abstract Submission:</b>
+                        A1-pageabstract clearly defining the problem statement,
+                        proposed solution, and expected outcomes is mandatory.
+                      </li>
+                      <li>
+                        <b class="text-dark">2. Final Report:</b> Adetailed
+                        report (up to 10 pages) explaining the methodology,
+                        technologies used, implementation details, and
+                        feasibility
+                      </li>
+                      <li>
+                        <b class="text-dark"> 3. Prototype Submission:</b>
+                        Teamsmust provide a functional prototype during the
+                        presentation
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="quote-wrapper">
+                  <div class="quotes">
+                    <h3>Presentation Rules</h3>
+                    <ol>
+                      <li>
+                        <b class="text-dark">1. Time Allocation: </b>
+                        Eachteam gets 10 minutes for presentation, followed by 5
+                        minutes for Q&A
+                      </li>
+                      <li>
+                        <b class="text-dark">2. Medium:</b>
+                        Presentations includes live demonstrations of the
+                        software.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="quote-wrapper">
+                  <div class="quotes">
+                    <h3>Code of Conduct</h3>
+                    <ol>
+                      <li>
+                        1. All participants are expected to maintain
+                        professional decorum during the event.
+                      </li>
+                      <li>
+                        2. Failure to adhere to submission deadlines will result
+                        in disqualification.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="container">
+                  <h3>For any query feel free to reach</h3>
+                  <p>Phone: 9693054074</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ Blog Area end =================-->
+    <!-- FAQ Area Strart -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title text-center mb-80">
+            <h4
+              class="wow fadeInRight"
+              data-wow-duration="1s"
+              data-wow-delay=".3s"
+            >
+              FAQ
+            </h4>
+          </div>
+        </div>
+      </div>
+    
+        <div id="accordion">
+            <!-- First Item -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1 <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Content for Accordion Item #1.
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Second Item -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2 <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Content for Accordion Item #2.
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Third Item -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3 <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Content for Accordion Item #3.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+<br>    
     <!-- FAQ Area End -->
 
     <!-- brand_area_start  -->
     <div class="brand_area black_bg">
       <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="section_title text-center mb-80">
-                      <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Sponsor Logos</h4>
-                  </div>
-              </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section_title text-center mb-80">
+              <h4
+                class="wow fadeInRight"
+                data-wow-duration="1s"
+                data-wow-delay=".3s"
+              >
+                Sponsor Logos
+              </h4>
+            </div>
           </div>
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="brand_wrap">
-                      <div class="brand_active owl-carousel">
-                          <div class="single_brand text-center">
-                              <img src="img/brand/1.png" alt="">
-                          </div>
-                          <div class="single_brand text-center">
-                              <img src="img/brand/2.png" alt="">
-                          </div>
-                          <div class="single_brand text-center">
-                              <img src="img/brand/3.png" alt="">
-                          </div>
-                          <div class="single_brand text-center">
-                              <img src="img/brand/4.png" alt="">
-                          </div>
-                          <div class="single_brand text-center">
-                              <img src="img/brand/5.png" alt="">
-                          </div>
-                          <div class="single_brand text-center">
-                              <img src="img/brand/1.png" alt="">
-                          </div>
-                          <div class="single_brand text-center">
-                              <img src="img/brand/2.png" alt="">
-                          </div>
-                      </div>
-                  </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="brand_wrap">
+              <div class="brand_active owl-carousel">
+                <div class="single_brand text-center">
+                  <img src="img/brand/1.png" alt="" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="img/brand/2.png" alt="" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="img/brand/3.png" alt="" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="img/brand/4.png" alt="" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="img/brand/5.png" alt="" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="img/brand/1.png" alt="" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="img/brand/2.png" alt="" />
+                </div>
               </div>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  <!-- brand_area_end  -->
- 
-  <!-- footer_start  -->
-  <footer class="footer">
-   <div class="footer_top">
-      <div class="container">
+    </div>
+    <!-- brand_area_end  -->
+
+    <!-- footer_start  -->
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="container">
           <div class="row justify-content-center">
-              <div class="col-lg-6 col-md-8">
-                  <div class="footer_widget">
-                      <div class="address_details text-center">
-                          <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">7th & 8th March, 2025 </h4>
-                          <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">MCA Deptartment</h3>
-                          <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Pimpri Chinchwad College of Engineering, Nigid ,Pune</p>
-                          <a href="#" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Register</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-      <div class="copy-right_text">
-          <div class="container">
-            <div class="row">
-               <div class="col-xl-12">
-                  <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                           Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed and Developed by  <a href="https://www.linkedin.com/in/rohit-kumar-9987801bb/" target="_blank">Rohit</a> and <a href="https://www.linkedin.com/in/utkarshrajputt/" target="_blank">Utkarsh</a>
+            <div class="col-lg-6 col-md-8">
+              <div class="footer_widget">
+                <div class="address_details text-center">
+                  <h4
+                    class="wow fadeInUp"
+                    data-wow-duration="1s"
+                    data-wow-delay=".3s"
+                  >
+                    7th & 8th March, 2025
+                  </h4>
+                  <h3
+                    class="wow fadeInUp"
+                    data-wow-duration="1s"
+                    data-wow-delay=".4s"
+                  >
+                    MCA Deptartment
+                  </h3>
+                  <p
+                    class="wow fadeInUp"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    Pimpri Chinchwad College of Engineering, Nigdi ,Pune
                   </p>
-                  </div>
+                  <a
+                    href="#"
+                    class="boxed-btn3 wow fadeInUp"
+                    data-wow-duration="1s"
+                    data-wow-delay=".6s"
+                    >Register</a
+                  >
+                </div>
               </div>
-         </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </footer>
-  <!-- footer_end  -->
+      <div class="copy-right_text">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <p
+                class="copy_right text-center wow fadeInDown"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | Designed and Developed by
+                <a
+                  href="https://www.linkedin.com/in/rohit-kumar-9987801bb/"
+                  target="_blank"
+                  >Rohit</a
+                >
+                and
+                <a
+                  href="https://www.linkedin.com/in/utkarshrajputt/"
+                  target="_blank"
+                  >Utkarsh</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer_end  -->
 
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
 
-   <!-- JS here -->
-   <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-   <script src="js/vendor/jquery-1.12.4.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/owl.carousel.min.js"></script>
-   <script src="js/isotope.pkgd.min.js"></script>
-   <script src="js/ajax-form.js"></script>
-   <script src="js/waypoints.min.js"></script>
-   <script src="js/jquery.counterup.min.js"></script>
-   <script src="js/imagesloaded.pkgd.min.js"></script>
-   <script src="js/scrollIt.js"></script>
-   <script src="js/jquery.scrollUp.min.js"></script>
-   <script src="js/wow.min.js"></script>
-   <script src="js/nice-select.min.js"></script>
-   <script src="js/jquery.slicknav.min.js"></script>
-   <script src="js/jquery.magnific-popup.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/gijgo.min.js"></script>
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
 
-   <!--contact js-->
-   <script src="js/contact.js"></script>
-   <script src="js/jquery.ajaxchimp.min.js"></script>
-   <script src="js/jquery.form.js"></script>
-   <script src="js/jquery.validate.min.js"></script>
-   <script src="js/mail-script.js"></script>
-
-   <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
