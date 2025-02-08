@@ -233,6 +233,22 @@
                         <div class="thumb_inner  wow fadeInUp img-size" data-wow-duration="1s" data-wow-delay=".3s">
                             <img src="img/about/10.png">
                         </div>
+                        <style>
+                            .img-size img {
+                                width: auto; /* Maintain natural width on desktop */
+                                max-width: 100%; /* Prevents overflow */
+                                height: auto; /* Maintains aspect ratio */
+                                display: block;
+                                margin: 0 auto;
+                              }
+                              
+                              @media (max-width: 576px) { /* Target small screens */
+                                .img-size img {
+                                    max-width: 90%; /* Prevents squeezing in mobile */
+                                    height: auto;
+                                }
+                              }
+                        </style>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">
