@@ -106,8 +106,9 @@
                             <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">
                                 <img src="img/shape/shape_2.svg" alt="">
                             </div> -->
-                            <!-- <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">7 & 8 March, 2025</span> -->
+                            
                             <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s" style="margin-top: 100px;">Insperia  2025</h3>
+                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">7<sup>th</sup> & 8<sup>th</sup> March, 2025</span>
                             <!-- <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">MCA Deptartment, PCCoE</p> -->
                             <div class="event-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                                 <img src="img/ins.png" alt="Event Logo">
@@ -229,12 +230,25 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-md-6">
                     <div class="about_thumb">
-                        <!-- <div class="shap_3  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
-                            <img src="img/shape/shape_3.svg" alt="">
-                        </div> -->
                         <div class="thumb_inner  wow fadeInUp img-size" data-wow-duration="1s" data-wow-delay=".3s">
                             <img src="img/about/10.png">
                         </div>
+                        <style>
+                            .img-size img {
+                                width: auto; /* Maintain natural width on desktop */
+                                max-width: 100%; /* Prevents overflow */
+                                height: auto; /* Maintains aspect ratio */
+                                display: block;
+                                margin: 0 auto;
+                              }
+                              
+                              @media (max-width: 576px) { /* Target small screens */
+                                .img-size img {
+                                    max-width: 90%; /* Prevents squeezing in mobile */
+                                    height: auto;
+                                }
+                              }
+                        </style>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">
@@ -249,6 +263,8 @@
     </div>
     <!-- about_area_end  -->
 
+
+    <!-- Program Details Start -->
     <!-- <div class="program_details_area detials_bg_1 overlay2">
         <div class="container">
             <div class="row">
@@ -318,68 +334,9 @@
             </div>
         </div>
     </div> -->
+    <!-- Program Details End -->
 
-    <!-- map_area_start  -->
-    <!-- <div class="map_area">
-        <div id="map" style="height: 600px; position: relative; overflow: hidden;">
-        
-        </div>
-        <script>
-            function initMap() {
-                var uluru = {
-                    lat: -25.363,
-                    lng: 131.044
-                };
-                var grayStyles = [{
-                        featureType: "all",
-                        stylers: [{
-                                saturation: -90
-                            },
-                            {
-                                lightness: 50
-                            }
-                        ]
-                    },
-                    {
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#ccdee9'
-                        }]
-                    }
-                ];
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: -31.197,
-                        lng: 150.744
-                    },
-                    zoom: 9,
-                    styles: grayStyles,
-                    scrollwheel: false
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
-        </script>
-        <div class="location_information black_bg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-            <h3>Insperia 2025</h3>
-            <div class="info_wrap">
-                <div class="single_info">
-                    <span>Vanue:</span>
-                    <p>26/A, Coontum Avenu
-                        New York-2783</p>
-                </div>
-                <div class="single_info">
-                    <span>Phone:</span>
-                    <p>+10 (88) 267 368 283</p>
-                </div>
-                <div class="single_info">
-                    <span>Email:</span>
-                    <p>contact@concert20.com</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- map_area_end  -->
+
 
     
 
