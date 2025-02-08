@@ -86,7 +86,7 @@
   }
   
   .name {
-    font-size: 25px;
+    font-size: 1.125rem; /* Approximately 18px */
     font-weight: 700;
     color: rgb(102, 102, 102);
     margin-top: 0px;
@@ -96,7 +96,7 @@
   }
   
   .position {
-    font-size: 25px;
+    font-size: 1.125rem; /* Approximately 18px */
     font-weight: 700;
     color: rgb(0, 135, 177);
     margin-top: 0px;
@@ -111,7 +111,7 @@
   }
   
   .team-card-container {
-    width: 280px;
+    width: 150px;
     margin: 0 0 40px 0;
   }
   
