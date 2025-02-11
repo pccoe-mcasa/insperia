@@ -4157,7 +4157,7 @@ h6 {
 
 /* line 10, ../../Arafath/CL/December/236. Event-02/HTML/scss/_blog.scss */
 .blog_area a {
-  color: #666666 !important;
+  color: #666666;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -5978,5 +5978,24 @@ h6 {
   }
 }
 
-/* College Image Css */
+/* Button css */
 
+.custom-btn {
+  background: #ff4533;
+  font-family: "Anton", sans-serif;
+  padding: 12px 46px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  color: white !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  text-transform: capitalize;
+}
+
+.custom-btn:hover {
+  background-color: white;
+  color: #ff4533;
+  border: 2px solid #ff4533;
+}

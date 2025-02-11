@@ -404,7 +404,7 @@
                                 <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">7th & 8th March, 2025 </h4>
                                 <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">MCA Deptartment</h3>
                                 <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Pimpri Chinchwad College of Engineering, Nigdi ,Pune</p>
-                                <a href="#" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Register</a>
+                                <!-- <a href="#" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Register</a> -->
                             </div>
                         </div>
                     </div>
@@ -518,8 +518,89 @@
             font-size: 16px;
         }
     }
-        
-</style>    
+     
+    
+    
+</style>  
+
+<!-- Add this inside the <body> tag, preferably near the end -->
+    <div id="posterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="img/poster_insperia.jpeg" alt="Event Poster" class="poster-image">
+        </div>
+    </div>
+    
+    <!-- Add this CSS inside the <head> or in your CSS file -->
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .modal-content {
+            position: relative;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            width: 60%;
+            max-height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+        .poster-image {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 80%;
+            }
+            .close {
+                font-size: 50px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+    
+    <!-- Add this script just before closing </body> tag -->
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("posterModal").style.display = "flex";
+            }, 3000); // 3-second delay
+        };
+        function closeModal() {
+            document.getElementById("posterModal").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
