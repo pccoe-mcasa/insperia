@@ -466,131 +466,15 @@
         <a href="https://www.instagram.com/pccoemcasa?igsh=cnd1bTgzc2xxajM=" target="_blank"><i class="fa fa-instagram"></i></a>
         <a href="https://www.linkedin.com/company/mcapccoe/posts/?feedView=all" target="_blank"><i class="fa fa-linkedin"></i></a>
     </div>
-<style>
-    .social-media-icons {
-        position: fixed;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        z-index: 1000;
-    }
-    
-    .social-media-icons a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        background: #007bff;
-        color: white;
-        font-size: 20px;
-        border-radius: 50%;
-        text-decoration: none;
-        transition: background 0.3s;
-    }
-    
-    .social-media-icons a:hover {
-        background: #0056b3;
-    }
-    @media (max-width: 768px) {
-        .social-media-icons {
-            right: 5px; /* Adjust position for small screens */
-        }
-    
-        .social-media-icons a {
-            width: 35px;
-            height: 35px;
-            font-size: 18px; /* Slightly smaller icons */
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .social-media-icons {
-            right: 2px;
-        }
-    
-        .social-media-icons a {
-            width: 30px;
-            height: 30px;
-            font-size: 16px;
-        }
-    }
-     
-    
-    
-</style>  
-
-<!-- Add this inside the <body> tag, preferably near the end -->
+  
+<!-- Modal -->
     <div id="posterModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <img src="img/poster_insperia.jpeg" alt="Event Poster" class="poster-image">
+            <img src="img/poster_insperia.jpg" alt="Event Poster" class="poster-image">
         </div>
     </div>
     
-    <!-- Add this CSS inside the <head> or in your CSS file -->
-    <style>
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .modal-content {
-            position: relative;
-            background-color: white;
-            padding: 10px;
-            border-radius: 10px;
-            width: 60%;
-            max-height: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow: hidden;
-        }
-        .poster-image {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            max-height: 80vh;
-            object-fit: contain;
-            border-radius: 5px;
-        }
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 40px;
-            font-weight: bold;
-            color: white;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 5px 10px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        @media (max-width: 768px) {
-            .modal-content {
-                width: 80%;
-            }
-            .close {
-                font-size: 50px;
-                padding: 10px 15px;
-            }
-        }
-    </style>
-    
-    <!-- Add this script just before closing </body> tag -->
     <script>
         window.onload = function() {
             setTimeout(function() {
