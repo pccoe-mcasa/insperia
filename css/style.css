@@ -5817,6 +5817,16 @@ h6 {
 
 /* Header Part  */
 
+@media (max-width: 767px) { /* Applies only to mobile screens */
+  .logo-container {
+      display: flex;
+      flex-direction: row; /* Ensures they stay side by side */
+      align-items: center;
+      justify-content: center; /* Centers them */
+      gap: 10px; /* Adjust spacing */
+  }
+}
+
 .college-banner {
   background: #f8f9fa;
   padding: 15px;
@@ -6010,7 +6020,7 @@ h6 {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -6018,10 +6028,10 @@ h6 {
 }
 .modal-content {
   position: relative;
-  background-color: white;
-  padding: 10px;
+  background-color: #ffffff;
+  padding: 40px;
   border-radius: 10px;
-  width: 60%;
+  width: auto;
   max-height: 90%;
   display: flex;
   flex-direction: column;
@@ -6038,23 +6048,27 @@ h6 {
 }
 .close {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 40px;
+  top: 2px;
+  right: 2px;
+  font-size: 25px;
   font-weight: bold;
-  color: white;
-  background: rgba(0, 0, 0, 0.6);
+  color:black;
   padding: 5px 10px;
-  border-radius: 50%;
+  border-radius: 5px;
+  border: 2px solid black;
   cursor: pointer;
 }
 @media (max-width: 768px) {
   .modal-content {
       width: 80%;
+      padding: 5px;
   }
   .close {
       font-size: 50px;
       padding: 10px 15px;
+      border-radius:50%;
+      color:white;
+      background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -6110,6 +6124,16 @@ h6 {
             font-size: 16px;
         }
     }
+    /* brand */
+    .single_brand{
+      margin-right: 15px;
+      padding: 20px;
+    }
+    .single_brand img{
+      height: 90%;
+      border-radius: 50%;
+    }
+
      
     
     
