@@ -5817,6 +5817,16 @@ h6 {
 
 /* Header Part  */
 
+@media (max-width: 767px) { /* Applies only to mobile screens */
+  .logo-container {
+      display: flex;
+      flex-direction: row; /* Ensures they stay side by side */
+      align-items: center;
+      justify-content: center; /* Centers them */
+      gap: 10px; /* Adjust spacing */
+  }
+}
+
 .college-banner {
   background: #f8f9fa;
   padding: 15px;
